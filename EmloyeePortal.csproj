@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.29">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Respositories\" />
+    <None Remove="Model\" />
+    <None Remove="Model\Domain\" />
+    <None Remove="Model\Dto\" />
+    <None Remove="Data\" />
+    <None Remove="Mapper\" />
+    <None Remove="Model\Dto\Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Respositories\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\Domain\" />
+    <Folder Include="Model\Dto\" />
+    <Folder Include="Data\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="Model\Dto\Validators\" />
+  </ItemGroup>
+</Project>
